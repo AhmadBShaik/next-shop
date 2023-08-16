@@ -34,7 +34,7 @@ GRANT ALL ON TABLES TO postgres, anon, authenticated, service_role, dashboard_us
 
 -- Step - 3: Make all tables in shop schema accessible
 
-GRANT SELECT
+GRANT SELECT, INSERT, UPDATE, DELETE 
 ON ALL TABLES IN SCHEMA shop 
 TO postgres, authenticated, service_role, dashboard_user, anon;
 
